@@ -1,0 +1,35 @@
+html, body 
+    margin: 0
+    padding: 0
+body 
+    margin: 0 !important
+    padding: 0 !important
+    mso-line-height-rule: exactly
+    -webkit-text-size-adjust: 100%
+body, table, td, th, div, p, span
+    mso-line-height-rule: exactly
+    color: #333333
+table, tr, td, th 
+    border-spacing: 0
+    border-collapse: collapse
+    mso-table-lspace: 0pt
+    mso-table-rspace: 0pt
+a 
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+    &[x-apple-data-detectors] 
+        color: inherit !important
+        text-decoration: none !important
+    // Gmail blue link fix
+    u + #body &, #MessageViewBody & 
+        color: inherit !important
+        text-decoration: none !important
+img 
+    display: block
+    border: 0
+    outline: none
+    height: auto
+    line-height: 100%
+    max-width: 100%
+    -ms-interpolation-mode: bicubic
